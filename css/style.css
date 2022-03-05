@@ -11,3 +11,135 @@ ol {
 a {
 	text-decoration: none;
 }
+
+/* header */
+header {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	border: 1px solid red;
+}
+
+header .inner {
+	width: 1180px;
+	height: 120px;
+	margin: 0px auto;
+	position: relative;
+	border: 2px solid black;
+}
+
+header .inner h1 {
+	position: absolute;
+	left: 0px;
+	bottom: 15px;
+}
+
+header .inner h1 a {
+	font-weight: bold;
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #444;
+}
+
+header .inner .util {
+	position:  absolute;
+	top: 20px;
+	right: 30px;
+	
+}
+
+header .inner .util li{
+	float: left;
+}
+
+header .inner .util li a {
+	border: 1px solid blue;
+	display: block;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #999;
+	padding: 0px 10px;
+}
+
+header .inner #gnb {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+header .inner #gnb li {
+	float: left;
+}
+
+header .inner #gnb li a {
+	display: block;
+	font: bold;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555;
+	padding: 20px 40px;
+	transition: all 1s;
+}
+
+header .inner #gnb li a:hover {
+	background: #555;
+	color: #fff;
+}
+
+/* figure */
+figure {
+	width: 100%;
+	height: calc(100vh - 120px);
+	background: #000;
+	position: relative;
+	overflow: hidden;
+	padding-top: 250px;
+}
+
+figure video {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+figure .inner {
+	width: 1180px;
+	margin: 0px auto;
+	position: relative;
+	border: 2px solid pink;
+}
+
+figure .inner h1 {
+	font-weight: normal;
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+figure .inner p {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #888;
+	margin-bottom: 60px;
+}
+
+figure .inner a {
+	display: block;
+	width: 400px;
+	height: 30px;
+	border: 1px solid #bbb;
+	font: bold 11px/30px "Arial"; /*첫번째:font-weight,  두번째:font-size/line-height, 세번째:font-family*/
+	color: #fff;
+	text-align: center;
+	letter-spacing: 1px;
+	transition: all;
+}
+
+figure .inner a:hover {
+	background: #fff;
+	color:#555;
+}
