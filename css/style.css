@@ -16,7 +16,6 @@ a {
 header {
 	width: 100%;
 	border-bottom: 1px solid #ddd;
-	border: 1px solid red;
 }
 
 header .inner {
@@ -24,7 +23,6 @@ header .inner {
 	height: 120px;
 	margin: 0px auto;
 	position: relative;
-	border: 2px solid black;
 }
 
 header .inner h1 {
@@ -52,7 +50,6 @@ header .inner .util li{
 }
 
 header .inner .util li a {
-	border: 1px solid blue;
 	display: block;
 	font-size: 12px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -142,4 +139,78 @@ figure .inner a {
 figure .inner a:hover {
 	background: #fff;
 	color:#555;
+}
+
+/* section */
+
+section{
+	width: 100%;
+	padding: 200px 0px;
+}
+
+section .inner {
+	width: 1180px;
+	margin: 0px auto;
+}
+
+section .inner h1 {
+	font: bold 24px/1 "Arial";
+	color: #555;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+section .inner .wrap::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+section .inner .wrap {
+	width: 100%;
+}
+
+section .inner .wrap article {
+	width: 280px;
+	float: left;
+	margin-right: 20px;
+}
+
+section .inner .wrap article:last-child {
+	margin-right: 0px;
+}
+
+section .inner .wrap article h2 {
+	margin-bottom: 10px;
+}
+
+section .inner .wrap article h2 a {
+	font: bold 16px/1 "Arial";
+	color: #555;
+}
+
+section .inner .wrap article p {
+	font: 14px/1.4 "Arial";
+	color: #777;
+}
+
+section .inner .wrap article .pic {
+	width: 100%;
+	height: 120px;
+	background: #333;
+	margin-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+section .inner .wrap article .pic img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section .inner .wrap::after {
+	content: "";
+	display: block;
+	clear: both;
 }
